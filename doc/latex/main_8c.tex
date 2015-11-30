@@ -1,0 +1,78 @@
+\hypertarget{main_8c}{}\section{src/main.c File Reference}
+\label{main_8c}\index{src/main.\+c@{src/main.\+c}}
+
+
+Hauptklasse.  
+
+
+{\ttfamily \#include \char`\"{}ampel.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}control.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stm32f3xx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stm32f3\+\_\+discovery.\+h\char`\"{}}\\*
+Include dependency graph for main.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_a78f3f52a3a37a3930d6f261fff4d00dc}{E\+X\+T\+I0\+\_\+\+Config} ()
+\item 
+void \hyperlink{main_8c_a807a6ba0d4375cd72bec2b4b01924782}{H\+A\+L\+\_\+\+G\+P\+I\+O\+\_\+\+E\+X\+T\+I\+\_\+\+Callback} (uint16\+\_\+t)
+\item 
+void \hyperlink{main_8c_a5033855e81ba2071231b60599a3ce9a1}{H\+A\+L\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+\_\+\+Callback} (void)
+\item 
+\hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{}int {\bfseries main} (void)\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8c_ad2298d5ef1e304cbb6891152a6b8bb90}{}\hyperlink{structampelparameter}{ampelparameter} {\bfseries repr}\label{main_8c_ad2298d5ef1e304cbb6891152a6b8bb90}
+
+\item 
+\hypertarget{main_8c_a5e5f27bf68b910793cd70d452ca0deaa}{}\hyperlink{structampelparameter}{ampelparameter} $\ast$ {\bfseries val} = \&repr\label{main_8c_a5e5f27bf68b910793cd70d452ca0deaa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hauptklasse. 
+
+\begin{DoxyAuthor}{Author}
+Michael Weinberger 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20.\+11.\+2015 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8c_a78f3f52a3a37a3930d6f261fff4d00dc}{}\index{main.\+c@{main.\+c}!E\+X\+T\+I0\+\_\+\+Config@{E\+X\+T\+I0\+\_\+\+Config}}
+\index{E\+X\+T\+I0\+\_\+\+Config@{E\+X\+T\+I0\+\_\+\+Config}!main.\+c@{main.\+c}}
+\subsubsection[{E\+X\+T\+I0\+\_\+\+Config()}]{\setlength{\rightskip}{0pt plus 5cm}void E\+X\+T\+I0\+\_\+\+Config (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main_8c_a78f3f52a3a37a3930d6f261fff4d00dc}
+Enablen der Clock, User-\/\+Button konfigurieren, External Interrupt auf Rising Edge Trigger stellen \hypertarget{main_8c_a807a6ba0d4375cd72bec2b4b01924782}{}\index{main.\+c@{main.\+c}!H\+A\+L\+\_\+\+G\+P\+I\+O\+\_\+\+E\+X\+T\+I\+\_\+\+Callback@{H\+A\+L\+\_\+\+G\+P\+I\+O\+\_\+\+E\+X\+T\+I\+\_\+\+Callback}}
+\index{H\+A\+L\+\_\+\+G\+P\+I\+O\+\_\+\+E\+X\+T\+I\+\_\+\+Callback@{H\+A\+L\+\_\+\+G\+P\+I\+O\+\_\+\+E\+X\+T\+I\+\_\+\+Callback}!main.\+c@{main.\+c}}
+\subsubsection[{H\+A\+L\+\_\+\+G\+P\+I\+O\+\_\+\+E\+X\+T\+I\+\_\+\+Callback(uint16\+\_\+t)}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+L\+\_\+\+G\+P\+I\+O\+\_\+\+E\+X\+T\+I\+\_\+\+Callback (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{G\+P\+I\+O\+\_\+\+Pin}
+\end{DoxyParamCaption}
+)}\label{main_8c_a807a6ba0d4375cd72bec2b4b01924782}
+Der E\+X\+T\+I-\/\+Callback fuer die Ampel \hypertarget{main_8c_a5033855e81ba2071231b60599a3ce9a1}{}\index{main.\+c@{main.\+c}!H\+A\+L\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+\_\+\+Callback@{H\+A\+L\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+\_\+\+Callback}}
+\index{H\+A\+L\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+\_\+\+Callback@{H\+A\+L\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+\_\+\+Callback}!main.\+c@{main.\+c}}
+\subsubsection[{H\+A\+L\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+\_\+\+Callback(void)}]{\setlength{\rightskip}{0pt plus 5cm}void H\+A\+L\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+\_\+\+Callback (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main_8c_a5033855e81ba2071231b60599a3ce9a1}
+Der Systick-\/\+Callback fuer die Ampel 

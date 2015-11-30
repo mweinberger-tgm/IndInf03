@@ -1,0 +1,84 @@
+\hypertarget{ampel_8h}{}\section{src/ampel.h File Reference}
+\label{ampel_8h}\index{src/ampel.\+h@{src/ampel.\+h}}
+
+
+Definition der States \& Events.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+Include dependency graph for ampel.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{ampel_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{ampel_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structampelparameter}{ampelparameter}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ampel_8h_a5f4305c91042b570d5d94e83ce6b8012}{ampelzustand} \{ \\*
+{\bfseries R\+O\+T}, 
+{\bfseries R\+O\+T\+\_\+\+G\+E\+L\+B}, 
+{\bfseries G\+R\+U\+E\+N}, 
+{\bfseries G\+R\+U\+E\+N\+\_\+\+B\+L\+I\+N\+K\+E\+N}, 
+\\*
+{\bfseries G\+E\+L\+B}, 
+{\bfseries G\+E\+L\+B\+\_\+\+B\+L\+I\+N\+K\+E\+N}
+ \}
+\item 
+enum \hyperlink{ampel_8h_a81b8396a1636de3e1e604ce4935e2f29}{ampelevent} \{ \\*
+{\bfseries F\+A\+H\+R\+E\+N}, 
+{\bfseries H\+A\+L\+T}, 
+{\bfseries V\+O\+R\+B\+E\+R\+E\+I\+T\+U\+N\+G\+\_\+\+F\+A\+H\+R\+E\+N}, 
+{\bfseries V\+O\+R\+B\+E\+R\+E\+I\+T\+U\+N\+G\+\_\+\+H\+A\+L\+T}, 
+\\*
+{\bfseries A\+C\+H\+T\+U\+N\+G}, 
+{\bfseries F\+A\+L\+S\+E}, 
+{\bfseries N\+A\+C\+H\+T\+S\+C\+H\+A\+L\+T\+U\+N\+G\+\_\+\+A\+N}, 
+{\bfseries N\+A\+C\+H\+T\+S\+C\+H\+A\+L\+T\+U\+N\+G\+\_\+\+A\+U\+S}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ampel_8h_a591d34377b80002f63ff21438c8b7207}{}void {\bfseries ampel} (\hyperlink{structampelparameter}{ampelparameter} $\ast$ampel)\label{ampel_8h_a591d34377b80002f63ff21438c8b7207}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definition der States \& Events. 
+
+\begin{DoxyAuthor}{Author}
+Michael Weinberger 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20.\+11.\+2015 
+\end{DoxyDate}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ampel_8h_a81b8396a1636de3e1e604ce4935e2f29}{}\index{ampel.\+h@{ampel.\+h}!ampelevent@{ampelevent}}
+\index{ampelevent@{ampelevent}!ampel.\+h@{ampel.\+h}}
+\subsubsection[{ampelevent}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ampelevent}}\label{ampel_8h_a81b8396a1636de3e1e604ce4935e2f29}
+Auflistung der Events inklusive Nachtschaltung \hypertarget{ampel_8h_a5f4305c91042b570d5d94e83ce6b8012}{}\index{ampel.\+h@{ampel.\+h}!ampelzustand@{ampelzustand}}
+\index{ampelzustand@{ampelzustand}!ampel.\+h@{ampel.\+h}}
+\subsubsection[{ampelzustand}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ampelzustand}}\label{ampel_8h_a5f4305c91042b570d5d94e83ce6b8012}
+Auflistung der Zustaende inklusive der Komponente fuer die Nachtschaltung 
